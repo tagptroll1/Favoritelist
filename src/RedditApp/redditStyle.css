@@ -1,0 +1,35 @@
+li a {
+    text-decoration: none;
+    color: white;
+    display: grid;
+    grid-template:
+            '.      title  title' auto
+            'score  thumb  author' 80px
+            '.      thumb  .' auto
+    / 60px 100px auto;
+}
+
+:not(li a:first-child){
+    padding-top: 10px;
+    border-top: grey solid 1px;
+}
+
+.postScore{
+    grid-area: score;
+}
+
+.postAuthor{
+    padding: 10px;
+    grid-area: author;
+}
+
+.postThumb{
+    padding-top: 10px;
+    max-width: 100px;
+    grid-area: thumb;
+}
+
+.postTitle{
+    margin: 0;
+    grid-area: title;
+}
